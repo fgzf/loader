@@ -1,0 +1,14 @@
+local gameId = game.GameId
+
+local sources = {
+    [255862868] = "https://raw.githubusercontent.com/fgzf/loader/main/pppeenom.lua",
+    [255863868] = "https://raw.githubusercontent.com/fgzf/loader/main/pppeenom.lua",
+    [111958650] = "https://raw.githubusercontent.com/fgzf/loader/main/arsenells.lua",
+    [8737899171] = "https://raw.githubusercontent.com/fgzf/loader/main/pgbbb.lua",
+    [6229116934] = "https://raw.githubusercontent.com/fgzf/loader/main/poopz.lua",
+}
+
+local url = sources[gameId]
+if url then
+    loadstring(game:HttpGet(url))()
+end
